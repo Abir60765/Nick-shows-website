@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webpage of Nick company</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+       *{
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0;
+        /* background-color: rgb(171, 171, 172); */
+       }
+       body{
+        background-color: rgb(63, 62, 62);
+       }
+       .all{
+        width: 80%;
+        height: 1000px;
+        position: relative;
+        margin: 13px auto;
+        box-shadow: 5px 6px 10px whitesmoke;
+     
+       }
+       .nabver{
+        
+        margin-top: 15px;
+        height: 100px;
+        background-color: rgb(25, 0, 255);
+        width: 100%;
+       
+        display: flex;
+       align-items: center;
+       }
+       .nav1{
+        height: 50px;
+        width: 80%;
+        display: flex;
+        
+       }
+       .nav1 img{
+        width: 50px;
+       }
+       .nav1 img:hover{
+        box-shadow: 5px 6px 10px rgb(179, 177, 177);
+       }
+       .nav1 h4{
+        font-size: 12px;
+        font-weight: 600;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        text-transform: uppercase;
+        color: aliceblue;
+       }
+       .nav1 h4:hover{
+        box-shadow: 5px 6px 10px rgb(173, 167, 167);
+       }
+       .nav2{
+        height: 50px;
+        width: 20%;
+        display: flex;
+        justify-content: center;
+       }
+       .nav2 i{
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        color: wheat;
+        margin-left: 20px;
+        text-align: center;
+       }                                                                                       
+          
+       .nav2 i:hover{
+        box-shadow: 5px 6px 10px whitesmoke;
+       }
+
+       .section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 900px;
+        background-color: rgb(252, 53, 153);
+       }
+
+       .section .cover {
+        /* display: flex; */ 
+        /* just ai flex na korle puro .cover beange jave tai aita important */
+         display: flex;
+        font-size: 22px;
+        width: 34.5%;
+       }
+       .section .cover img{
+        width: 100%;
+       position: relative;
+       object-fit: cover;
+        height: 100%;
+      
+        
+       }
+       .section .cover .sec1{
+        width: 35%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       flex-direction: column;
+       }
+     
+       .sec1 h1{
+        word-spacing: 20px;
+        line-height: 75px;
+        text-transform: uppercase;
+        color: rgb(217, 217, 218);
+       }
+       .sec1 h1::after{
+        content: 'product ';
+        width: 50px;
+        height: 50px;
+        color: rgb(230, 168, 199);
+        box-shadow: 5px 6px 15px blue;
+       }
+       .sec1 h1:hover::after{
+        color: bisque;
+        box-shadow: 5px 6px 15px whitesmoke;
+       }
+       .sec1 .info{
+        line-height: 35px;
+        color: beige;
+       }
+       .sec1 button{
+        margin-right: 100px;
+        align-self: end;
+      
+        width: 100px;
+        height: 50px;
+        font-weight: bold;
+        border: 2px solid blue;
+       }
+       .sec1 button:hover{
+        box-shadow: 8px 10px 15px hotpink;
+       }
+
+
+       .section .sec2{
+      
+        display: flex;
+       align-items: center;
+     
+        width: 65%;
+        overflow-x: auto;
+       }
+
+      #sub-sec1, #sub-sec2, #sub-sec3, #sub-sec4, #sub-sec5 {
+        display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        width: 500px;
+        height: 500px;
+        background-color: aliceblue;
+      
+       margin-right: 5px;
+        
+      
+       }
+      
+       #sub-sec1 img{
+        
+       width: 400px;
+       height: 350px;
+       margin-right: 10px;
+       object-fit: cover;
+     
+       }
+       #sub-sec2 img{
+        width: 400px;
+       height: 350px;
+       margin-right: 10px;
+       object-fit: cover;
+       }
+       #sub-sec3 img{
+        width: 400px;
+       height: 350px;
+       margin-right: 10px;
+       object-fit: cover;
+       }
+       #sub-sec4 img{
+        width: 400px;
+       height: 350px;
+       margin-right: 10px;
+       object-fit: cover;
+       }
+       #sub-sec5 img{
+        width: 400px;
+       height: 350px;
+       margin-right: 10px;
+       object-fit: cover;
+       }
+
+       #sub-sec1 img:hover{
+       width: 450px;
+       height: 360px;
+       margin-right: 10px;
+       object-fit: cover;
+       box-shadow: 10px 8px 15px hotpink;
+       transition: 1s;
+       }
+       #sub-sec2 img:hover{
+        width: 450px;
+       height: 360px;
+       margin-right: 10px;
+       object-fit: cover;
+       box-shadow: 10px 8px 15px hotpink;
+       transition: 1s;
+       }
+       #sub-sec3 img:hover{
+        width: 450px;
+       height: 360px;
+       margin-right: 10px;
+       object-fit: cover;
+       box-shadow: 10px 8px 15px hotpink;
+       transition: 1s;
+       }
+       #sub-sec4 img:hover{
+        width: 450px;
+       height: 360px;
+       margin-right: 10px;
+       object-fit: cover;
+       box-shadow: 10px 8px 15px hotpink;
+       transition: 1s;
+       }
+       #sub-sec5 img:hover{
+        width: 450px;
+       height: 360px;
+       margin-right: 10px;
+       object-fit: cover;
+       box-shadow: 10px 8px 15px hotpink;
+       transition: 1s;
+       }
+      .sec2 #a{
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        color: hotpink;
+        margin-top: 10px;
+       }
+
+       .sec2 #a:hover{
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        color: rgb(255, 206, 122);
+        transition: 1s;
+        margin-top: 10px;
+       }
+
+       .sec2 #b {
+        height: 40px;
+        width: 115px;
+        font-weight: bold;
+        
+       }
+       .sec2 #b:hover{
+        box-shadow: 10px 8px  20px  rgb(124, 111, 111);
+       }
+       .sec2 #b i{
+        font-size: 25px;
+        color: blue;
+       }
+       .section .sec2::-webkit-scrollbar{
+        display: none;
+       }
+    </style>
+</head>
+<body>
+   <div class="all">
+    <div class="nabver">
+        <div class="nav1">
+            <img src="png-transparent-nickelodeon-logo-nick-jr-television-show-cartoon-logo-miscellaneous-text-orange-removebg-preview.png" alt="" srcset="">
+            <h4>home</h4>
+            <h4>men</h4>
+            <h4>women</h4>
+            <h4>information</h4>
+        </div>
+    
+        <div class="nav2">
+            <i class="ri-file-search-line" ></i>
+            <i class="ri-shopping-bag-line"></i>
+            <i class="ri-feedback-fill"></i>
+        </div>
+    </div>
+    <div class="section">
+        <div class="cover">
+            <img src="https://as1.ftcdn.net/v2/jpg/03/30/54/92/1000_F_330549271_ggghQi8rSH0hL0WAuosAVf7mtNfWeahB.jpg" alt="" srcset="">
+            <div class="sec1">
+            
+                <h1>about our all <br></h1>
+                <p class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo similique quidem, iure ex reprehenderit alias facere. Porro quo molestias sunt reiciendis dolores in est rem aspernatur praesentium exercitationem temporibus repellendus facilis, nesciunt quibusdam debitis officiis magni impedit. At, voluptates aperiam! Inventore eius laudantium asperiores incidunt officia! Magni incidunt minima temporibus!</p>
+                <button>SHOP NOW</button>
+            </div>
+        </div>
+       
+        <div class="sec2">
+            <div id="sub-sec1">
+                <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18274390/2022/5/14/c64644f6-840f-4496-bb42-19359e9881771652523841987RoadsterMenBrownTexturedPUSneakers1.jpg" alt="sorry" srcset="">
+                <h1 id="a">LEORAR SHOES</h1>
+                <button id="b"> <i class="ri-shopping-cart-2-line"></i>SHOP NOW</button>
+            </div>
+
+            <div id="sub-sec2">
+                <img src="https://ssbleather.com/wp-content/uploads/2023/06/Elegance-Medicated-Leather-Loafers-SB-S474-3.jpg" alt="" srcset="">
+                <h1 id="a">DOT SHOES</h1>
+               <button id="b"> <i class="ri-shopping-cart-2-line"></i>SHOP NOW</button>
+
+            </div>
+            <div id="sub-sec3">
+                <img src="https://5.imimg.com/data5/MT/MB/EO/SELLER-14290347/men-555-black-fashion-lace-up-shoes-500x500.jpg" alt="" srcset="">
+                <h1 id="a">HIGH SHOES</h1>
+                <button id="b"> <i class="ri-shopping-cart-2-line"></i>SHOP NOW</button>
+            </div>
+            <div id="sub-sec4">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvZXN8ZW58MHx8MHx8fDA%3D" alt="" srcset="">
+                <h1 id="a">RED SHOES</h1>
+                <button id="b"> <i class="ri-shopping-cart-2-line"></i>SHOP NOW</button>
+            </div>
+            <div id="sub-sec5" >
+                <img src="https://ssbleather.com/wp-content/uploads/2023/06/Elegance-Medicated-Leather-Loafers-SB-S474-3.jpg" alt="" srcset="">
+                <h1 id="a">CHIKES SHOES</h1>
+                <button id="b"> <i class="ri-shopping-cart-2-line"></i>SHOP NOW</button>
+            </div>
+           
+        </div>
+    </div>
+
+
+   </div> 
+</body>
+</html>
